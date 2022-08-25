@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="app.css">
     <title>Demo Scan</title>
 
+    <!-- from https://github.com/nimiq/qr-scanner  -->
+    <script src="qr-scanner.umd.min.js"></script>
+
     <script src="app.js" defer></script>
 </head>
 
@@ -78,7 +81,7 @@
                 <h1>Demo Scan</h1>
                 <button id="back-btn">Back</button>
             </div>
-            <video id="scan-video" class="camvas" autoplay></video>
+            <video id="scan-video" class="camvas" autoplay height="500" width="500"></video>
         </main>
     </div>
 </body>
