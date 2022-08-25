@@ -11,65 +11,76 @@
 </head>
 
 <body>
-    <div class="toolbar">
-        <h1>Demo Scan</h1>
-        <div>
-            <label for="cam-select">Camera</label>
-            <select id="cam-select">
+    <div id="page-0" class="page">
+        <main>
+            <div class="toolbar">
+                <h1>Demo Scan</h1>
+                <div>
+                    <label for="cam-select">Camera</label>
+                    <select id="cam-select">
                 <option>1</option>
                 <option>2</option>
             </select>
-        </div>
-        <div>
-            <button>Scan</button>
-        </div>
+                </div>
+                <button id="scan-btn">Scan</button>
+            </div>
+
+            <section>
+                <ul class="scan-list">
+                    <li>
+                        <div class="item-id">#1</div>
+                        <div class="item-date">9h00 01/02/2022</div>
+                        <label>Id</label>
+                        <div class="item-value">#123456</div>
+                        <label>Long Id</label>
+                        <div class="item-value">#123456</div>
+                    </li>
+                    <li>
+                        <div class="item-id">#2</div>
+                        <div class="item-date">9h00 01/02/2022</div>
+                        <label>Id</label>
+                        <div class="item-value">#123456</div>
+                        <label>Long Id</label>
+                        <div class="item-value">#123456</div>
+                    </li>
+                    <li>
+                        <div class="item-id">#3</div>
+                        <div class="item-date">9h00 01/02/2022</div>
+                        <label>Id</label>
+                        <div class="item-value">#123456</div>
+                        <label>Long Id</label>
+                        <div class="item-value">#123456</div>
+                    </li>
+                    <li>
+                        <div class="item-id">#2</div>
+                        <div class="item-date">9h00 01/02/2022</div>
+                        <label>Id</label>
+                        <div class="item-value">#123456</div>
+                        <label>Long Id</label>
+                        <div class="item-value">#123456</div>
+                    </li>
+                    <li>
+                        <div class="item-id">#3</div>
+                        <div class="item-date">9h00 01/02/2022</div>
+                        <label>Id</label>
+                        <div class="item-value">#123456</div>
+                        <label>Long Id</label>
+                        <div class="item-value">#123456</div>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </div>
 
-    <section>
-        <ul class="scan-list">
-            <li>
-                <div class="item-id">#1</div>
-                <div class="item-date">9h00 01/02/2022</div>
-                <label>Id</label>
-                <div class="item-value">#123456</div>
-                <label>Long Id</label>
-                <div class="item-value">#123456</div>
-            </li>
-            <li>
-                <div class="item-id">#2</div>
-                <div class="item-date">9h00 01/02/2022</div>
-                <label>Id</label>
-                <div class="item-value">#123456</div>
-                <label>Long Id</label>
-                <div class="item-value">#123456</div>
-            </li>
-            <li>
-                <div class="item-id">#3</div>
-                <div class="item-date">9h00 01/02/2022</div>
-                <label>Id</label>
-                <div class="item-value">#123456</div>
-                <label>Long Id</label>
-                <div class="item-value">#123456</div>
-            </li>
-            <li>
-                <div class="item-id">#2</div>
-                <div class="item-date">9h00 01/02/2022</div>
-                <label>Id</label>
-                <div class="item-value">#123456</div>
-                <label>Long Id</label>
-                <div class="item-value">#123456</div>
-            </li>
-            <li>
-                <div class="item-id">#3</div>
-                <div class="item-date">9h00 01/02/2022</div>
-                <label>Id</label>
-                <div class="item-value">#123456</div>
-                <label>Long Id</label>
-                <div class="item-value">#123456</div>
-            </li>
-        </ul>
-    </section>
-
+    <div id="page-1" class="page" hidden>
+        <main>
+            <div class="toolbar">
+                <h1>Demo Scan</h1>
+                <button id="back-btn">Back</button>
+            </div>
+            <video id="scan-video" class="camvas" autoplay></video>
+        </main>
+    </div>
 </body>
 
 </html>
